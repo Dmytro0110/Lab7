@@ -9,31 +9,50 @@
 </head>
 <body style="background-image: url(fon3.jpg); background-repeat: no-repeat; background-size: cover;">
     <p>Оформлення замовлення</p>
-    <table class="frame" align="left" width =30% frame="border">
+    <div>
+    <table class="frame" align="left"  frame="border">
         <form>
-        <caption>Контакні дані</caption>
+        <caption class="caption1">Контакні дані</caption>
         <tr>
             <td>Телефон</td>
         </tr>
         <tr>
-            <td><input required type="tel" name="number phone" placeholder="+380(__)-___-__-__" size="70%"</td>
+            <td><input required type="tel" name="number phone" placeholder="+380(__)-___-__-__" size="120%"</td>
         </tr>
         <tr>
             <td>Прізвище</td>
         </tr>
         <tr>
-            <td><input required type="text" name="lastname" size="70%"</td>
+            <td><input required type="text" name="lastname" placeholder="Введіть Прізвище кирилицею" size="120%"</td>
         </tr>
         <tr>
-            <td>Ім'я</td>
+            <td>Ім'я та по-батькові</td>
         </tr>
         <tr>
-            <td><input required type="text" name="firsname" size="70%"</td>
+            <td><input required type="text" name="firsname" placeholder="Введіть ім'я та по-батькові кирилицею" size="120%"</td>
         </tr>
         <tr>
             <td align="right"><button class="button" type="submit">ПРОДОВЖИТИ</button></td>
         </tr>
         </form>
     </table>
+    </div>
+    <div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    <table align="left" style="width:20%;" cellspacing="20px" cellpadding="1px">
+        <caption class="caption2">Виберіть спосіб оплати</caption>
+        <form>
+            <tr>
+                <td><input type="radio"  id="contactChoice1" name="contact" value="cash"><label for="contactChoice1">Наложений платіж</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio"  id="contactChoice2" name="contact" value="kart"><label for="contactChoice2">Карта</label></td>
+            </tr>
+        </form>
+    </table>
+    </div>
 </body>
 </html>
